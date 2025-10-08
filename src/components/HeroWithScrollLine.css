@@ -1,0 +1,7 @@
+svg {
+  overflow: visible;
+}
+
+path {
+  transition: stroke-dashoffset 0.1s linear;
+}
