@@ -60,7 +60,7 @@ useEffect(() => {
         
         audioRef.current.play();
       }
-    }, 200);
+    }, 70);
 
     return () => clearTimeout(timeout);
   }
@@ -1081,3 +1081,4 @@ bg-white
     
   );
 }
+
