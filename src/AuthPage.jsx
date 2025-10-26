@@ -18,7 +18,7 @@ export const handleForgotPassword = async (email) => {
   }
 
   const { error } = await supabase.auth.resetPasswordForEmail(email, {
-    redirectTo: "http://localhost:5174/reset-password", // الرابط التجريبي
+    redirectTo: "https://numix3.vercel.app/reset-password", 
   });
 
   if (error) {
@@ -184,5 +184,6 @@ const [hasError, setHasError] = React.useState(false);
 
 
      
+
 
 
