@@ -71,7 +71,7 @@ export default function Leaderboard() {
 
       <div
         id="classes"
-        className="w-full max-w-6xl px-4 pt-8 pb-8 flex gap-4 overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory scroll-smooth"
+        className="w-full min-w-full max-w-6xl px-4 pt-8 pb-8 flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth"
         style={{
           minHeight: "400px",
         }}
@@ -81,7 +81,8 @@ export default function Leaderboard() {
             key={cls.id}
             className={`
               relative
-              rounded-2xl snap-center min-w-[250px] sm:min-w-0
+              rounded-2xl snap-center w-[250px] sm:w-[280px] md:w-[300px] lg:w-[320px] xl:w-[340px] flex-shrink-0
+
               p-6 text-center transform transition-all duration-500
               backdrop-blur-md bg-white/20 shadow-lg hover:scale-105
               ${
@@ -141,3 +142,4 @@ export default function Leaderboard() {
     </section>
   );
 }
+
