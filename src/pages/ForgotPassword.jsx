@@ -7,7 +7,7 @@ export default function ForgotPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: "https://numix3.vercel.app/reset-password",
+      redirectTo: "https://numix3.vercel.app//reset-password",
     });
     if (error) return alert("خطأ: " + error.message);
     alert("تم إرسال إيميل لإعادة التعيين — تحقق من صندوق البريد (أو Spam).");
@@ -20,4 +20,5 @@ export default function ForgotPassword() {
     </form>
   );
 }
+
 
