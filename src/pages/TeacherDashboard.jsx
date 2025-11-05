@@ -120,7 +120,10 @@ const handleAddCourse = async () => {
 
     if (error) throw error;
 
-    setCoursesItems(prev => [data[0], ...prev]);
+    setCoursesItems(prev => [
+  { ...data[0], content: { ...data[0].content } },
+  ...prev
+]);
     setCourseTitle("");
     setCourseCaption("");
     setCoursePrice("");
@@ -726,3 +729,4 @@ const handleDeleteExtra = async (item) => {
     </div>
   );
 }
+
