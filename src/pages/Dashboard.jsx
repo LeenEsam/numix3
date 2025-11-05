@@ -893,7 +893,7 @@ bg-white
       </div>
 
       {/* النص ثابت بجانب الثقب */}
-      <span className="text-purple-700 font-bold text-lg" style={{ fontSize: "40px" }}>
+      <span className="text-purple-700 font-bold text-lg" style={{ font-size: 40px; white-space: nowrap;}}>
         الدورات المتاحة 
       </span>
      
@@ -1081,4 +1081,5 @@ bg-white
     
   );
 }
+
 
